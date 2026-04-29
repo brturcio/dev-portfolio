@@ -21,7 +21,10 @@ export function Hero() {
 					<button
 						className="hero__button hero__button--outline"
 						onClick={() => {
-							trackEvent("click_cv", "Download CV");
+							trackEvent("download_cv", {
+								section: "hero",
+								item: "cv",
+							});
 							window.open(cvbrturcio, "_blank", "noopener,noreferrer");
 						}}
 					>
@@ -30,7 +33,10 @@ export function Hero() {
 					<button
 						className="hero__button hero__button--dark"
 						onClick={() => {
-							trackEvent("click_contact_info", "Contact Info");
+							trackEvent("open_contact_info", {
+								section: "hero",
+								item: "contact_info",
+							});
 							window.location.href = "#contact";
 						}}
 					>
@@ -39,18 +45,30 @@ export function Hero() {
 				</div>
 
 				<div className="hero__socials">
-					<a href="https://www.linkedin.com/in/brturcio"
+					<a
+						href="https://www.linkedin.com/in/brturcio"
 						target="_blank"
 						rel="noopener noreferrer"
-						onClick={() => trackEvent("click_linkedin", "LinkedIn Profile")}
+						onClick={() =>
+							trackEvent("open_social_profile", {
+								section: "hero",
+								platform: "linkedin",
+							})
+						}
 					>
 						<img src={linkedin} alt="LinkedIn" className="hero_socials-icon hero__img--linkedin" />
 					</a>
-					<a href="https://github.com/brturcio"
+					<a
+						href="https://github.com/brturcio"
 						target="_blank"
 						rel="noopener noreferrer"
-						onClick={() => trackEvent("click_github", "GitHub Profile")}
-						>
+						onClick={() =>
+							trackEvent("open_social_profile", {
+								section: "hero",
+								platform: "github",
+							})
+						}
+					>
 						<img src={github} alt="GitHub" className="hero_socials-icon hero__img--github" />
 					</a>
 				</div>

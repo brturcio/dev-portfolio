@@ -1,8 +1,7 @@
-export const trackEvent = (eventName: string, label: string) => {
+type AnalyticsParams = Record<string, string | number | boolean | undefined>;
+
+export const trackEvent = (eventName: string, params: AnalyticsParams = {}) => {
 	if (typeof window !== "undefined" && window.gtag) {
-		window.gtag("event", eventName, {
-			event_category: "engagement",
-			event_label: label,
-		});
+		window.gtag("event", eventName, params);
 	}
 };
