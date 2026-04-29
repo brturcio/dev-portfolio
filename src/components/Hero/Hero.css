@@ -1,0 +1,117 @@
+.hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
+	height: 80vh;
+}
+
+.hero__image {
+	display: flex;
+	width: 420px;
+	height: 420px;
+	margin: auto 0;
+}
+
+.hero__image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 48% center;
+	border-radius: 50%;
+	filter: grayscale(100%);
+	/* filter: grayscale(100%) brightness(1.25) contrast(0.90); */
+	transition: filter 1000ms ease;
+}
+
+.hero__image img:hover {
+	filter: grayscale(30%);
+}
+
+.hero__content {
+	align-self: center;
+	text-align: center;
+}
+
+.hero__content p {
+	font-weight: 600;
+}
+
+.hero__greeting {
+	text-align: center;
+	color: var(--color-muted);
+	margin-bottom: 0.25rem;
+	font-size: 1.5rem;
+}
+
+.hero__name {
+	text-align: center;
+	line-height: 1.1;
+	font-size: 3.5rem;
+}
+
+.hero__role {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	color: var(--color-muted);
+}
+
+.hero__buttons {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.hero__button {
+	font-weight: 600;
+	transition: all 300ms ease;
+	padding: 1rem;
+	width: 11rem;
+	border-radius: 2rem;
+	border: 0.1rem solid var(--color-dark);
+	cursor: pointer;
+
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	font-size: 1rem;
+}
+
+.hero__button--outline {
+	background: none;
+	color: var(--color-text);
+}
+
+.hero__button--outline:hover {
+	background: var(--color-dark);
+	color: white;
+}
+
+.hero__button--dark {
+	background: var(--color-dark);
+	color: white;
+}
+
+.hero__button--dark:hover {
+	background: black;
+}
+
+.hero__socials {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	margin-top: 1rem;
+}
+
+.hero__social-icon,
+.hero__img--linkedin,
+.hero__img--github {
+	cursor: pointer;
+	height: 2rem;
+	transition: transform 300ms ease;
+}
+
+.hero__social-icon:hover {
+	transform: translateY(-3px);
+}

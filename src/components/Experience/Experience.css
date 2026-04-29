@@ -1,0 +1,124 @@
+.experience {
+	position: relative;
+	padding-top: 2vh;
+	padding-bottom: 4rem;
+	min-height: auto;
+	margin: 0 10rem;
+	box-sizing: border-box;
+}
+
+.experience__subtitle {
+	text-align: center;
+	font-weight: 600;
+	color: var(--color-muted);
+}
+
+.experience__title {
+	font-size: 3em;
+	text-align: center;
+}
+
+.experience__block {
+	margin-top: 1.5rem;
+}
+
+.experience__section-title {
+	font-size: 1.8rem;
+	margin-bottom: 1.5rem;
+	color: var(--color-text);
+	text-align: left;
+}
+
+.experience__grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2rem;
+}
+
+.experience__grid--it {
+	grid-template-columns: 1fr;
+}
+
+.experience__card {
+	padding: 1.8rem 2rem;
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+	background: white;
+	border-radius: 2rem;
+	border: 0.1rem solid rgba(163, 163, 163, 0.35);
+	box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+	transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.experience__card:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 18px 45px rgba(0, 0, 0, 0.14);
+}
+
+.experience__period {
+	color: var(--color-muted);
+	font-weight: 600;
+	font-size: 0.95rem;
+	margin-bottom: 0.5rem;
+}
+
+.experience__role {
+	font-size: 1.4rem;
+	color: var(--color-text);
+	margin-bottom: 0.3rem;
+}
+
+.experience__company {
+	font-weight: 600;
+	color: var(--color-text);
+	margin-bottom: 0.2rem;
+}
+
+.experience__location {
+	color: var(--color-muted);
+	font-size: 0.95rem;
+	margin-bottom: 1rem;
+}
+
+.experience__description {
+	color: var(--color-muted);
+	line-height: 1.6;
+	margin-bottom: 1rem;
+}
+
+.experience__list {
+	padding-left: 1.2rem;
+	color: var(--color-muted);
+	line-height: 1.6;
+	font-size: 1rem;
+	margin-top: 1rem;
+}
+
+.experience__list li {
+	margin-bottom: 0.5rem;
+}
+
+.experience__places {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.experience__place {
+	padding-right: 1rem;
+	border-right: 0.1rem solid rgba(163, 163, 163, 0.25);
+}
+
+.experience__place:last-child {
+	border-right: none;
+	padding-right: 0;
+}
+
+.experience__text {
+	color: var(--color-muted);
+	line-height: 1.7;
+	font-size: 1rem;
+	margin-top: 1rem;
+}
