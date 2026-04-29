@@ -66,7 +66,9 @@
 	border: 0.1rem solid rgb(163, 163, 163, 0.35);
 	text-align: center;
 	box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
-	transition: transform 300ms ease, box-shadow 300ms ease;
+	transition:
+		transform 300ms ease,
+		box-shadow 300ms ease;
 }
 
 .about__card:hover {
@@ -104,3 +106,38 @@
 	font-size: 1.2rem;
 }
 
+/* Responsive about layout */
+@media (max-width: 1024px) {
+	.about {
+		margin: 0 3rem;
+	}
+	.about__image {
+		width: 320px;
+		height: 320px;
+	}
+}
+
+@media (max-width: 640px) {
+	.about {
+		margin: 0 1.5rem;
+		padding-bottom: 2rem;
+		height: auto;
+	}
+	.about__container {
+		flex-direction: column;
+		gap: 1.25rem;
+		align-items: center;
+	}
+	.about__image {
+		width: 220px;
+		height: 220px;
+		margin: 0;
+	}
+	.about__cards {
+		flex-direction: column;
+		gap: 1rem;
+	}
+	.about__text {
+		font-size: 1rem;
+	}
+}

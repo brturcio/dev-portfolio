@@ -20,3 +20,43 @@ body {
 html {
 	scroll-behavior: smooth;
 }
+
+/* Responsive utilities and breakpoints */
+:root {
+	--container-padding-desktop: 10rem;
+	--container-padding-tablet: 3rem;
+	--container-padding-mobile: 1.5rem;
+}
+
+/* Fluid typography examples */
+h1 {
+	font-size: clamp(1.6rem, 4.5vw, 3.5rem);
+}
+h2 {
+	font-size: clamp(1.25rem, 3.5vw, 2.5rem);
+}
+
+/* Global container reset for component margins on smaller screens */
+@media (max-width: 1024px) {
+	.about,
+	.projects,
+	.contact,
+	.experience {
+		margin: 0 var(--container-padding-tablet);
+	}
+}
+
+@media (max-width: 640px) {
+	.about,
+	.projects,
+	.contact,
+	.experience,
+	.hero {
+		margin: 0 var(--container-padding-mobile);
+		padding-left: 0;
+		padding-right: 0;
+	}
+	body {
+		font-size: 14px;
+	}
+}
