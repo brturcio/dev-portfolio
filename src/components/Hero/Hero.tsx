@@ -1,5 +1,5 @@
 import "./Hero.css";
-import cvbrturcio from "../../assets/cv/cvbrturcio2026.pdf";
+import cvbrturcio from "../../assets/cv/CV_TURCIOS_Bryan.pdf";
 import profilePicture from "../../assets/imgprofile/00.jpeg";
 import linkedin from "../../assets/socials/linkedin.png";
 import github from "../../assets/socials/github-logo.png";
