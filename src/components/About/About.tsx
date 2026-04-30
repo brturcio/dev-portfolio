@@ -20,7 +20,7 @@ export function About() {
 							<img src={experienceIcon} alt="Technical skills icon" className="about__icon" />
 							<h3 className="about__card-title">Technical Skills</h3>
 							<p className="about__card-text">
-								C / C++ · Java · TypeScript · JavaScript
+								C / C++ · TypeScript · JavaScript
 								<br />
 								React · Vite · Node.js
 								<br />
